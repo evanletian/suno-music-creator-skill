@@ -1,0 +1,4 @@
+interface:
+  display_name: "Suno Music Creator"
+  short_description: "Create bilingual Suno lyrics and structured music prompts"
+  default_prompt: "Use $suno-music-creator to create two complete Suno-ready song versions from my idea."
