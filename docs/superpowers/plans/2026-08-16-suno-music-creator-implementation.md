@@ -345,7 +345,7 @@ Link every reference directly from `SKILL.md`; do not nest reference discovery.
 Run from the skill-creator directory:
 
 ```bash
-python scripts/generate_openai_yaml.py /absolute/path/to/suno-music-creator-skill \
+python scripts/generate_openai_yaml.py /workspace/scratch/2259c0e99bed/suno-music-creator-skill \
   --interface display_name="Suno Music Creator" \
   --interface short_description="Create bilingual Suno lyrics and structured music prompts" \
   --interface default_prompt="Use $suno-music-creator to create two complete Suno-ready song versions from my idea."
@@ -363,7 +363,7 @@ interface:
 - [ ] **Step 4: Run structural validation**
 
 ```bash
-python /root/.codex/skills/oai/skill-creator/scripts/quick_validate.py /absolute/path/to/suno-music-creator-skill
+python /root/.codex/skills/oai/skill-creator/scripts/quick_validate.py /workspace/scratch/2259c0e99bed/suno-music-creator-skill
 ```
 
 Expected: validation succeeds with no errors.
@@ -437,7 +437,7 @@ Expected: all files in the File Map appear exactly once.
 If validation required a fix, commit only the corrected files with:
 
 ```bash
-git add <corrected-file-paths>
+git add SKILL.md agents/openai.yaml references evals/test-cases.md
 git commit -m "fix: resolve Suno skill validation findings"
 ```
 
