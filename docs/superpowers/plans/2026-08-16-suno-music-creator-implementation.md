@@ -416,7 +416,7 @@ Expected: validator succeeds, counts are correct, and the working tree is clean.
 Confirm:
 
 ```text
-no TBD, TODO, or unfinished placeholders
+no unfinished markers or placeholder instructions
 no claims of guaranteed Suno controls
 no dependency on a fixed Suno version
 no artist-name imitation instructions
